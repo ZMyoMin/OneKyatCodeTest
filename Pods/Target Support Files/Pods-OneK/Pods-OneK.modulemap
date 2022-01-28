@@ -1,0 +1,6 @@
+framework module Pods_OneK {
+  umbrella header "Pods-OneK-umbrella.h"
+
+  export *
+  module * { export * }
+}

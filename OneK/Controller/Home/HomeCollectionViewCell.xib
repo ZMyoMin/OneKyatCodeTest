@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeCell" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="OneK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="162" height="273"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="162" height="273"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJ9-e1-zOy">
+                        <rect key="frame" x="2" y="2" width="158" height="269"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beetle" translatesAutoresizingMaskIntoConstraints="NO" id="eeI-u3-mC1">
+                                <rect key="frame" x="0.0" y="0.0" width="158" height="188.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beetle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaZ-PJ-px3">
+                                <rect key="frame" x="20" y="208.5" width="118" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="330,000 Lakhs" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yl-Rm-gFS">
+                                <rect key="frame" x="20" y="236.5" width="118" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.62745098040000002" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eeI-u3-mC1" firstAttribute="leading" secondItem="qJ9-e1-zOy" secondAttribute="leading" id="1aj-W9-dUU"/>
+                            <constraint firstAttribute="trailing" secondItem="eeI-u3-mC1" secondAttribute="trailing" id="42T-IG-bXB"/>
+                            <constraint firstItem="4Yl-Rm-gFS" firstAttribute="top" secondItem="oaZ-PJ-px3" secondAttribute="bottom" constant="10" id="4Zx-j9-g0F"/>
+                            <constraint firstAttribute="trailing" secondItem="4Yl-Rm-gFS" secondAttribute="trailing" constant="20" id="IRV-aF-irY"/>
+                            <constraint firstItem="oaZ-PJ-px3" firstAttribute="top" secondItem="eeI-u3-mC1" secondAttribute="bottom" constant="20" id="RUg-j2-xkB"/>
+                            <constraint firstItem="eeI-u3-mC1" firstAttribute="top" secondItem="qJ9-e1-zOy" secondAttribute="top" id="XWa-hB-plj"/>
+                            <constraint firstItem="oaZ-PJ-px3" firstAttribute="leading" secondItem="qJ9-e1-zOy" secondAttribute="leading" constant="20" id="gKD-2y-wqD"/>
+                            <constraint firstItem="eeI-u3-mC1" firstAttribute="height" secondItem="qJ9-e1-zOy" secondAttribute="height" multiplier="0.7" id="hg4-gS-IXW"/>
+                            <constraint firstAttribute="trailing" secondItem="oaZ-PJ-px3" secondAttribute="trailing" constant="20" id="iuA-nM-dJY"/>
+                            <constraint firstItem="4Yl-Rm-gFS" firstAttribute="leading" secondItem="qJ9-e1-zOy" secondAttribute="leading" constant="20" id="jLI-GW-e1P"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qJ9-e1-zOy" secondAttribute="trailing" constant="2" id="C5t-Y1-Zm8"/>
+                <constraint firstAttribute="bottom" secondItem="qJ9-e1-zOy" secondAttribute="bottom" constant="2" id="VIQ-4r-KFo"/>
+                <constraint firstItem="qJ9-e1-zOy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="lr3-9L-rdX"/>
+                <constraint firstItem="qJ9-e1-zOy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="tiq-as-zRG"/>
+            </constraints>
+            <size key="customSize" width="162" height="273"/>
+            <connections>
+                <outlet property="cardView" destination="qJ9-e1-zOy" id="U5F-V3-nGP"/>
+            </connections>
+            <point key="canvasLocation" x="218.84057971014494" y="182.47767857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="beetle" width="1920" height="1200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
